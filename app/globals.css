@@ -2,26 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html {
+  font-size: 62.5%;
+
+  @apply bg-secondary;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+::selection {
+  background-color: #222222;
+  color: #eb4b4b;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* For browser compatibility */
+::-moz-selection {
+  background-color: #222222;
+  color: #eb4b4b;
+}
+
+dialog {
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) !important;
+}
+
+.modal {
+  width: 100%;
+  height: 100dvh;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.projectContainer {
+  border-radius: 5rem;
+  width: 90%;
+  @apply bg-secondary;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  z-index: 100;
+  overflow: auto;
 }
