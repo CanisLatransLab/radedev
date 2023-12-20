@@ -84,8 +84,8 @@ export default function GetInTouch() {
         </div>
         <div>
           <p className='mx-auto mt-4 max-w-[67rem] text-center text-2xl font-thin md:text-[2.5rem]  md:leading-[3rem] mobile:w-[30rem]'>
-            I’m always looking for new opportunities. Whether you have a question or project in
-            mind, drop a message and I’ll get beck to you as soon as I can.
+            I&#39;m always looking for new opportunities. Whether you have a question or project in
+            mind, drop a message and I&#39;ll get beck to you as soon as I can.
           </p>
         </div>
       </div>
