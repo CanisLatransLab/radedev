@@ -1,5 +1,3 @@
-'use client';
-
 import Hero from '../components/Hero/Hero';
 import Portfolio from '../components/Portfolio/Portfolio';
 import GetInTouch from '../components/About/GetInTouch';
