@@ -17,8 +17,8 @@ import Link from 'next/link';
 export default function Portfolio() {
   //Breakpoints
   const isMobile = useMediaQuery('(max-width: 640px)');
-  const isTablet = useMediaQuery('(max-width: 1024px)');
-  const isTabletHoriz = useMediaQuery('(max-width: 1400px)');
+  // const isTablet = useMediaQuery('(max-width: 1024px)');
+  // const isTabletHoriz = useMediaQuery('(max-width: 1400px)');
   //Refs
   const targetRef = useRef(null);
   const refSecond = useRef(null);
@@ -40,11 +40,11 @@ export default function Portfolio() {
   const heartY = useTransform(scrollYProgress, [0, 1], [-150, -550]);
   const heartYMobile = useTransform(scrollYProgress, [0, 1], [100, -550]);
   const glassY = useTransform(scrollYProgress, [0, 1], [-150, -1500]);
-  const glassYmobile = useTransform(scrollYProgress, [0, 1], [-150, -1300]);
+  const glassYmobile = useTransform(scrollYProgress, [0, 1], [0, 0]);
   const bonesY = useTransform(scrollYProgress, [0, 0.5, 1], [400, -100, 0]);
 
   const whoAmIY = useTransform(scrollYProgress2, [0, 1], [700, -700]);
-  // const whoAmIyMobile = useTransform(scrollYProgress2, [0, 1], [-200, -200]);
+  const whoAmIyMobile = useTransform(scrollYProgress2, [0, 1], [-200, -200]);
   const brainYmobile = useTransform(scrollYProgress3, [0, 1], [400, -600]);
 
   const toggleModal = () => {
