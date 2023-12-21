@@ -139,12 +139,12 @@ export default function Hero() {
     return pos === 1 ? 'absolute' : 'fixed';
   });
 
+  const heroOpacity = useTransform(scrollYProgress4, [0, 1], [1, 0]);
   const heroTextUp = useTransform(scrollYProgress3, [0.2, 1], [0, -1000]);
   const heroRadekUp = useTransform(scrollYProgress3, [0.5, 1], [0, -250]);
   const heroRadekUpMobile = useTransform(scrollYProgress3, [0.2, 1], [0, -250]);
   const heroHandImgUp = useTransform(scrollYProgress3, [0.2, 1], [0, -440]);
   const heroHeadImgUp = useTransform(scrollYProgress4, [0.1, 1], [0, -1500]);
-  // const heroHeadOpacity = useTransform(scrollYProgress3, [0.9, 1], [1, 0]);
 
   return (
     <>
