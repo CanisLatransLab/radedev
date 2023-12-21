@@ -8,7 +8,7 @@ html {
   @apply bg-secondary;
 }
 
-::selection {
+npm::selection {
   background-color: #222222;
   color: #eb4b4b;
 }

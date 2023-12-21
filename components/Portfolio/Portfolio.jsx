@@ -70,7 +70,7 @@ export default function Portfolio() {
         </motion.div>
 
         <motion.div
-          className=' bg-white-1/2 relative z-50 max-h-[380rem]  min-h-[125rem] rounded-[9rem] border border-clWhite pb-[4rem] backdrop-blur-md md:mx-[10%] mobile:w-full'
+          className=' bg-white-1/2 relative z-50 max-h-[380rem] rounded-[9rem] border border-clWhite pb-[4rem] backdrop-blur-md md:mx-[10%] mobile:w-full'
           style={{ y: isMobile ? glassYmobile : glassY }}>
           <div
             className='mt-10 flex justify-center md:mr-[15rem] md:justify-end'

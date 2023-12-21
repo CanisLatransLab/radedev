@@ -6,12 +6,12 @@ import Nav from '@/components/Nav/Nav';
 
 export default function Welcome() {
   return (
-    <>
+    <div>
       <Nav />
       <Hero />
       <Portfolio />
       <GetInTouch />
       <Footer />
-    </>
+    </div>
   );
 }
