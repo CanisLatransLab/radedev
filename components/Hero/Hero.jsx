@@ -5,7 +5,7 @@ import head from '@/public/assets/head.png';
 
 import { motion, useScroll, useTransform, useAnimate, useInView, stagger } from 'framer-motion';
 import Image from 'next/image';
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 import { useMediaQuery } from 'usehooks-ts';
 
 //Tech logos
@@ -16,7 +16,9 @@ import logoAstro from '@/public/assets/logo-astro.svg';
 import logoTs from '@/public/assets/logo-ts.svg';
 import logoSass from '@/public/assets/logo-sass.svg';
 
-import Lenis from '@studio-freight/lenis';
+// import Lenis from '@studio-freight/lenis';
+import Lottie from 'lottie-react';
+import scrollAnim from '@/public/assets/scrollDown.json';
 
 export default function Hero() {
   // //smooth scroll
@@ -229,6 +231,10 @@ export default function Hero() {
                       DEV.
                     </h1>
                     <h1 className='absolute -top-4 text-[21.5rem] font-bold text-secondary'>_</h1>
+                  </div>
+
+                  <div className='max-w-[10rem] translate-y-[11rem] mobile:translate-y-[14rem]'>
+                    <Lottie animationData={scrollAnim} className='invert' />
                   </div>
                 </motion.div>
 
