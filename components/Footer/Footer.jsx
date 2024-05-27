@@ -88,15 +88,15 @@ function Footer() {
     offset: ['start end', 'start start'],
   });
 
-  const palmY = useTransform(scrollYProgress, [-5, 1], [1500, -100]);
+  const palmY = useTransform(scrollYProgress, [-5, 1], [1500, -0]);
 
   const socialIcons = ['iconGithub', 'iconInstagram', 'iconLinkedin', 'iconBehance'];
 
   return (
     <footer
-      className='relative mt-[-25%] flex h-[84.5rem] w-full mobile:mt-0 mobile:h-[265rem] fullHd:h-[88rem]'
+      className='relative mt-[-25%] flex h-[84.5rem] w-full mobile:mt-0  mobile:h-[265rem] fullHd:h-[88rem]'
       ref={targetRef}>
-      <div className='relative flex w-full justify-center'>
+      <div className='relative flex w-full max-w-[130rem]  justify-center'>
         <form
           ref={formRef}
           onSubmit={formik.handleSubmit}
@@ -188,11 +188,11 @@ function Footer() {
         </form>
 
         <motion.div
-          className='absolute left-[25%] top-[8rem] z-0 -translate-x-1/2 justify-center opacity-[0.3] mobile:z-[-5]'
+          className=' absolute bottom-[-7rem] left-[50%] -z-10 -translate-x-1/2 justify-center opacity-[0.3] mobile:z-[-5]'
           style={{ y: isMobile ? 2278 : palmY }}>
           <Image src={palm} width={790} alt='Anatomy hand' />
         </motion.div>
-        <div className='mb-[-3.5rem] ml-[15rem] flex flex-col content-center gap-8 self-end mobile:mb-[-4rem] mobile:ml-[3rem]'>
+        <div className='mb-[-3.5rem] ml-[15rem] flex translate-y-24 flex-col content-center gap-8 self-end mobile:mb-[-4rem] mobile:ml-[3rem]'>
           {socials.map((social) => {
             return (
               <div className='mobile:max-w-[3rem]' key={social.id}>

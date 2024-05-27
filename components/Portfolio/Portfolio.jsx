@@ -80,7 +80,7 @@ export default function Portfolio() {
             </h2>
           </div>
 
-          <div className='mx-auto flex max-w-[1300rem] flex-wrap justify-center gap-20'>
+          <div className='mx-auto flex max-w-[130rem] flex-wrap justify-center gap-20'>
             {folioData.map((folio, i) => {
               return (
                 <Link href={`/projects/${folio.id}`} key={folio.id} scroll={false}>

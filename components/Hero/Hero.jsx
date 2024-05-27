@@ -68,9 +68,9 @@ export default function Hero() {
 
   //Hand
   const handScaleDownMobile = useTransform(scrollYProgress2, [0.2, 1], [0.4, 0.6]);
-  const handScaleDown = useTransform(scrollYProgress2, [0.2, 1], [1, 0.6]);
+  const handScaleDown = useTransform(scrollYProgress2, [0.2, 1], [0.7, 0.6]);
   const handYMobile = useTransform(scrollYProgress2, [0.2, 1], [0, -60]);
-  const handY = useTransform(scrollYProgress2, [0.2, 1], [-50, -140]);
+  const handY = useTransform(scrollYProgress2, [0.4, 0.9, 1], [-100, -250, -350]);
   const handInvert = useTransform(scrollYProgress, (pos) => {
     return pos >= 0.6 ? 'invert(0)' : 'invert(1)';
   });
@@ -161,7 +161,7 @@ export default function Hero() {
                 filter: handInvert,
                 transition: 'all .5s',
               }}
-              className='absolute left-[-15rem] top-[-35rem] scale-[.5] opacity-40 sm:left-[-5rem] sm:top-[-10rem] sm:scale-[.9]'>
+              className='absolute left-[-15rem] top-[-35rem] opacity-40 sm:left-[-5rem] sm:top-[-10rem] sm:scale-[.9]'>
               <Image
                 src={hand}
                 height={860}
@@ -200,7 +200,7 @@ export default function Hero() {
             <div className=' relative 2xl:translate-y-[-5rem]'>
               <motion.div
                 style={{ opacity: glassOpacity }}
-                className=' z-5 absolute left-[50%] top-5 h-[86rem] max-h-[87rem] w-full max-w-[137rem] -translate-x-1/2 rounded-[9rem] border border-clWhite/20  bg-gradient-to-br from-[#ffffff07] to-transparent backdrop-blur-md sm:top-[8rem]'></motion.div>
+                className=' z-5 absolute left-[50%] top-5 h-[86rem] max-h-[87rem] w-full max-w-[137rem] -translate-x-1/2 rounded-[9rem] border  border-clWhite/20 bg-gradient-to-br from-[#ffffff]/[0.007] to-transparent  backdrop-blur-sm sm:top-[8rem]'></motion.div>
               <div className='realtive mx-auto mt-24 h-full max-h-[87rem] w-full max-w-[170rem]'>
                 <motion.div className='relative' style={{ y: heroHeadImgUp }}>
                   <motion.div
