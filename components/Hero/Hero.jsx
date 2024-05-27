@@ -161,7 +161,7 @@ export default function Hero() {
                 filter: handInvert,
                 transition: 'all .5s',
               }}
-              className='absolute left-[-15rem] top-[-35rem] opacity-40 sm:left-[-5rem] sm:top-[-10rem] sm:scale-[.9]'>
+              className='absolute left-[-15rem] top-[-35rem] -z-20 opacity-40 sm:left-[-5rem] sm:top-[-10rem] sm:scale-[.9]'>
               <Image
                 src={hand}
                 height={860}
@@ -173,14 +173,8 @@ export default function Hero() {
           </motion.div>
           <motion.div
             style={{ opacity: handOpacity }}
-            className=' absolute bottom-[-25rem] right-[-20rem] hidden rotate-180 scale-[.7] opacity-40 mix-blend-screen invert lg:block 2xl:right-[0rem]'>
-            <Image
-              src={hand}
-              height={860}
-              alt='Hand'
-              placeholder='blur'
-              className='h-auto w-full'
-            />
+            className=' absolute bottom-[-25rem] right-[-20rem] hidden rotate-180 scale-[.7] invert  lg:block 2xl:right-[0rem]'>
+            <Image src={hand} height={860} alt='Hand' className='h-auto w-full' />
           </motion.div>
           <div className='container relative z-10 mx-auto flex h-[100dvh] flex-col p-10 '>
             <motion.h2
@@ -200,7 +194,7 @@ export default function Hero() {
             <div className=' relative 2xl:translate-y-[-5rem]'>
               <motion.div
                 style={{ opacity: glassOpacity }}
-                className=' z-5 absolute left-[50%] top-5 h-[86rem] max-h-[87rem] w-full max-w-[137rem] -translate-x-1/2 rounded-[9rem] border  border-clWhite/20 bg-gradient-to-br from-[#ffffff]/[0.007] to-transparent  backdrop-blur-sm sm:top-[8rem]'></motion.div>
+                className=' z-5 absolute left-[50%] top-5 h-[86rem] max-h-[87rem] w-full max-w-[137rem] -translate-x-1/2 rounded-[9rem] border  border-clWhite/20 bg-gradient-to-br from-[#ffffff]/[0.06] to-transparent  backdrop-blur-md sm:top-[8rem]'></motion.div>
               <div className='realtive mx-auto mt-24 h-full max-h-[87rem] w-full max-w-[170rem]'>
                 <motion.div className='relative' style={{ y: heroHeadImgUp }}>
                   <motion.div
@@ -216,7 +210,7 @@ export default function Hero() {
                       transition: 'filter .6s',
                       top: isMobile ? '' : isTablet ? headYTablet : '',
                     }}
-                    className='absolute top-[51rem] -translate-y-1/2 translate-x-[20rem] scale-[.4] opacity-30 mix-blend-screen  sm:top-[35rem] sm:scale-[.6] lg:top-[40rem] xl:top-[50rem] xl:scale-[.8]'>
+                    className='absolute top-[51rem] -translate-y-1/2 translate-x-[20rem] scale-[.4] opacity-30  sm:top-[35rem] sm:scale-[.6] lg:top-[40rem] xl:top-[50rem] xl:scale-[.8]'>
                     <Image src={head} width={570} alt='Head' placeholder='blur' />
                   </motion.div>
                 </motion.div>
