@@ -38,6 +38,8 @@ export default function Hero() {
   const isTablet = useMediaQuery('(max-width: 1024px)');
   const isTabletHoriz = useMediaQuery('(max-width: 1400px)');
 
+  const laptopHeight = useMediaQuery('(max-height: 950px)');
+
   //Animation on scroll left-top hand
   const targetRef = useRef(null);
   const targetRef2 = useRef(null);
@@ -193,10 +195,12 @@ export default function Hero() {
             </motion.h2>
             <div className=' relative 2xl:translate-y-[-5rem]'>
               <motion.div
-                style={{ opacity: glassOpacity }}
-                className=' z-5 absolute left-[50%] top-5 h-[86rem] max-h-[87rem] w-full max-w-[137rem] -translate-x-1/2 rounded-[9rem] border  border-clWhite/20 bg-gradient-to-br from-[#ffffff]/[0.06] to-transparent  backdrop-blur-md sm:top-[8rem]'></motion.div>
+                style={{ opacity: glassOpacity, height: laptopHeight ? '75rem' : '86rem' }}
+                className=' z-5 absolute left-[50%] top-5 max-h-[87rem] w-full max-w-[137rem] -translate-x-1/2 rounded-[9rem] border  border-clWhite/20 bg-gradient-to-br from-[#ffffff]/[0.06] to-transparent  backdrop-blur-md sm:top-[8rem]'></motion.div>
               <div className='realtive mx-auto mt-24 h-full max-h-[87rem] w-full max-w-[170rem]'>
-                <motion.div className='relative' style={{ y: heroHeadImgUp }}>
+                <motion.div
+                  className='relative'
+                  style={{ y: heroHeadImgUp, scale: laptopHeight ? 0.9 : 1 }}>
                   <motion.div
                     style={{
                       left: isMobile

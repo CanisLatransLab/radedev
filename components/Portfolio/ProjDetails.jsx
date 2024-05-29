@@ -51,9 +51,9 @@ function ProjDetails({ project }) {
           height={1080}
         />
       </div>
-      <p className='w-full max-w-[80rem] py-24 text-[2rem] font-thin mobile:p-8 mobile:text-[1.8rem]'>
+      {/* <p className='w-full max-w-[80rem] py-24 text-[2rem] font-thin mobile:p-8 mobile:text-[1.8rem]'>
         {project.details.desc}
-      </p>
+      </p> */}
 
       {project.details.url02 && (
         <div className='w-full py-8 sm:max-w-[80%]'>
@@ -96,7 +96,7 @@ function ProjDetails({ project }) {
         </div>
 
         <p className='pt-12 text-[2.5rem] font-thin mobile:text-[1.8rem]'>
-          Tech: <strong className='font-bold'>{project.work}</strong>
+          Role: <strong className='font-bold'>{project.work}</strong>
         </p>
 
         {project.web && (

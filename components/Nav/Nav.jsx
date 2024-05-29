@@ -12,7 +12,8 @@ export default function Nav() {
   const socialIcons = ['iconGithub', 'iconInstagram', 'iconLinkedin', 'iconBehance'];
 
   const isMobile = useMediaQuery('(max-width: 640px)');
-  const isDesktop = useMediaQuery('(min-width: 1280px)');
+  const isMacBook = useMediaQuery('(min-height: 800px) and (max-height: 999px)');
+  const isDesktop = useMediaQuery('(min-height: 1000px)');
 
   // Nav Y positions states :
   const [yHome, setYHome] = useState(null);
@@ -27,18 +28,23 @@ export default function Nav() {
       setYAbout(4365);
       setYContact(5467);
     } else if (isDesktop) {
-      setYHome(1095);
-      setYPort(2546);
-      setYAbout(3454);
-      setYContact(4590);
+      setYHome(1088);
+      setYPort(2564);
+      setYAbout(3461);
+      setYContact(4574);
+    } else if (isMacBook) {
+      setYHome(902);
+      setYPort(2078);
+      setYAbout(2924);
+      setYContact(3861);
     }
-  }, [isMobile, isDesktop]);
+  }, [isMobile, isMacBook, isDesktop]);
 
   //scrollY Navigation:
   const { scrollY } = useScroll();
 
   useMotionValueEvent(scrollY, 'change', (latest) => {
-    // console.log(latest);
+    console.log(latest);
     if (latest >= 1076) {
       setShowNav(true);
     } else {

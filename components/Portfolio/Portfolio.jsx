@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 import heart from '@/public/assets/heart.png';
 import bones from '@/public/assets/bones.png';
-import brain from '@/public/assets/brain.png';
+import brain from '@/public/assets/brain2.png';
 
 import { useRef } from 'react';
 import ProjectCard from './ProjectCard';
@@ -100,9 +100,9 @@ export default function Portfolio() {
       {/*  // Who am I Section: */}
       <div className='relative flex translate-y-[-60rem] justify-center mobile:translate-y-[-100rem] mobile:flex-col'>
         <motion.div
-          className='max-sm:absolute max-sm:top-[-30rem] opacity-[.5]'
+          className='max-sm:absolute max-sm:top-[-30rem] opacity-[.2]'
           style={{ y: isMobile ? brainYmobile : '', scale: isMobile ? 0.7 : '' }}>
-          <Image src={brain} width={450} alt='brain' placeholder='blur' quality={100} />
+          <Image src={brain} width={450} alt='brain' quality={100} />
         </motion.div>
         <motion.div style={{ y: whoAmIY }}>
           <h2 className='max-md:text-center text-[5rem] font-extralight text-clBlack sm:text-[5rem] md:text-[6rem] mobile:mx-auto mobile:text-center'>
