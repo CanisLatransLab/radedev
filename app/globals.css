@@ -5,7 +5,7 @@
 html {
   font-size: 62.5%;
 
-  @apply bg-secondary;
+  @apply bg-clBlack sm:bg-secondary;
 }
 
 npm::selection {
@@ -22,8 +22,6 @@ npm::selection {
 dialog {
   transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) !important;
 }
-
-
 
 .modal {
   width: 100%;

@@ -88,7 +88,7 @@ function Footer() {
     offset: ['start end', 'start start'],
   });
 
-  const palmY = useTransform(scrollYProgress, [-5, 1], [1500, -0]);
+  const palmY = useTransform(scrollYProgress, [-5, 1], [1500, 100]);
 
   const socialIcons = ['iconGithub', 'iconInstagram', 'iconLinkedin', 'iconBehance'];
 
@@ -192,31 +192,32 @@ function Footer() {
           style={{ y: isMobile ? 2278 : palmY }}>
           <Image src={palm} width={790} alt='Anatomy hand' />
         </motion.div>
-        <div className='mb-[-3.5rem] ml-[15rem] flex flex-col content-center gap-8 self-end mobile:mb-[-4rem] mobile:ml-[3rem]'>
-          {socials.map((social) => {
-            return (
-              <div className='mobile:max-w-[3rem]' key={social.id}>
-                <a
-                  href={social.href}
-                  className='cursor-pointer'
-                  target='_blank'
-                  rel='noopener noreferrer'>
-                  <Image
-                    src={social.icon}
-                    width={40}
-                    height={40}
-                    alt={social.alt}
-                    className='h-auto w-full'
-                  />
-                </a>
-              </div>
-            );
-          })}
-
-          <div className='mx-auto h-[15rem] w-[2px] bg-clBlack mobile:h-[7rem]'></div>
+        <div className='relative ml-[15rem] mobile:ml-[3rem]'>
+          <div className='absolute  bottom-[-10rem] flex w-[4rem] flex-col gap-8 overflow-hidden'>
+            {socials.map((social) => {
+              return (
+                <div className='  mobile:max-w-[3rem]' key={social.id}>
+                  <a
+                    href={social.href}
+                    className='cursor-pointer'
+                    target='_blank'
+                    rel='noopener noreferrer'>
+                    <Image
+                      src={social.icon}
+                      width={80}
+                      height={80}
+                      alt={social.alt}
+                      className='h-auto w-full'
+                    />
+                  </a>
+                </div>
+              );
+            })}
+            <div className='mx-auto h-[20rem] w-[2px] bg-clBlack mobile:h-[7rem]'></div>
+          </div>
         </div>
 
-        <p className='ml-auto mr-[15rem] self-end justify-self-end text-4xl  font-thin md:mb-16 mobile:mx-auto mobile:translate-y-5 mobile:text-3xl'>
+        <p className='ml-auto mr-[15rem] translate-x-[50rem] translate-y-[10rem] self-end justify-self-end text-4xl  font-thin md:mb-16 mobile:mx-auto mobile:translate-y-5 mobile:text-3xl'>
           designed & built by <span className='font-bold text-primary'>radek</span>
           <span className='font-bold text-clBlack'>kojtych</span>
         </p>
