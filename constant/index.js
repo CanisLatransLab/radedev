@@ -21,22 +21,25 @@ export const folioData = [
   },
   {
     id: 2,
-    title: 'HBC',
-    web: '',
+    title: 'Doomrider Photo App',
+    web: 'https://www.doomridermedia.com/',
     work: 'UI Designer • Front-end Developer',
-    stack: ['logoAstro', 'logoReact', 'logoTailwind', 'logoFramer'],
-    avatar: '/assets/portfolio/02-hbc-avatar.jpg',
+    stack: ['logoNext', 'logoReact', 'logoTailwind', 'logoFramer', 'logoCloud'],
+    avatar: '/assets/portfolio/06-doomrider-avatar.jpg',
     details: {
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       url01:
-        'https://res.cloudinary.com/ds1rsu8lj/image/upload/v1702924632/canis/projects/02/screen-1_kjtid8.jpg',
-      alt01: 'First preview of HBC project',
+        'https://res.cloudinary.com/ds1rsu8lj/image/upload/v1717108159/canis/projects/07/doom-1_d6mi0b.jpg',
+      alt01: 'First preview of DoomRiderMedia Photography App',
       url02:
-        'https://res.cloudinary.com/ds1rsu8lj/image/upload/v1702924636/canis/projects/02/screen-2_mtm2ib.jpg',
-      alt02: 'Second preview of HBC project',
+        'https://res.cloudinary.com/ds1rsu8lj/image/upload/v1717108160/canis/projects/07/doom-4_kaczlm.jpg',
+      alt02: 'Second preview of DoomRiderMedia Photography App',
       url03:
-        'https://res.cloudinary.com/ds1rsu8lj/image/upload/v1702924635/canis/projects/02/screen-3_phmpme.jpg',
-      alt03: 'Third preview of HBC project',
+        'https://res.cloudinary.com/ds1rsu8lj/image/upload/v1717108161/canis/projects/07/doom-2_b4hx19.jpg',
+      alt03: 'Third preview of DoomRiderMedia Photography App',
+      url04:
+        'https://res.cloudinary.com/ds1rsu8lj/image/upload/v1717108160/canis/projects/07/doom-3_th57ak.jpg',
+      alt04: 'Fourth preview of DoomRiderMedia Photography App',
     },
   },
   {
@@ -75,20 +78,22 @@ export const folioData = [
   },
   {
     id: 5,
-    title: 'Rational',
-    web: 'https://www.nisbets.co.uk/rational-spotlight',
+    title: 'HBC',
+    web: '',
     work: 'UI Designer • Front-end Developer',
-    stack: ['logoJs', 'logoSass'],
-    avatar: '/assets/portfolio/03-rational-avatar.jpg',
+    stack: ['logoAstro', 'logoReact', 'logoTailwind', 'logoFramer'],
+    avatar: '/assets/portfolio/02-hbc-avatar.jpg',
     details: {
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       url01:
-        'https://res.cloudinary.com/ds1rsu8lj/image/upload/v1702924638/canis/projects/05/screen-1_lyxlcv.jpg',
-      alt01: 'First preview of Rational project',
-      url02: '',
-      alt02: '',
-      url03: '',
-      alt03: '',
+        'https://res.cloudinary.com/ds1rsu8lj/image/upload/v1702924632/canis/projects/02/screen-1_kjtid8.jpg',
+      alt01: 'First preview of DoomRiderMedia Photography App',
+      url02:
+        'https://res.cloudinary.com/ds1rsu8lj/image/upload/v1702924636/canis/projects/02/screen-2_mtm2ib.jpg',
+      alt02: 'Second preview of DoomRiderMedia Photography App',
+      url03:
+        'https://res.cloudinary.com/ds1rsu8lj/image/upload/v1702924635/canis/projects/02/screen-3_phmpme.jpg',
+      alt03: 'Third preview of DoomRiderMedia Photography App',
     },
   },
   {

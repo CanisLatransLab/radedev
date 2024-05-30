@@ -7,6 +7,7 @@ import logoTailwind from '@/public/assets/logo-tailwind.svg';
 import logoAstro from '@/public/assets/logo-astro.svg';
 import logoTs from '@/public/assets/logo-ts.svg';
 import logoSass from '@/public/assets/logo-sass.svg';
+import logoCloud from '@/public/assets/logo-cloudinary.svg';
 import enlarge from '@/public/assets/icon-enlarge.svg';
 
 export {
@@ -18,5 +19,6 @@ export {
   logoAstro,
   logoTs,
   logoSass,
+  logoCloud,
   enlarge,
 };

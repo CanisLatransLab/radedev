@@ -14,6 +14,7 @@ import {
   logoAstro,
   logoTs,
   logoSass,
+  logoCloud,
   enlarge,
 } from '@/public/assets/index';
 
@@ -60,6 +61,7 @@ export default function ProjectCard({ delayTime, onClick, title, stack, avatar, 
     logoAstro,
     logoTs,
     logoSass,
+    logoCloud,
     enlarge,
   };
 

@@ -1,6 +1,4 @@
 import ProjDetails from '@/components/Portfolio/ProjDetails';
-import Image from 'next/image';
-import Link from 'next/link';
 
 import { folioData } from '../../../../constant/index';
 

@@ -10,6 +10,7 @@ import {
   logoAstro,
   logoTs,
   logoSass,
+  logoCloud,
   enlarge,
 } from '@/public/assets/index';
 
@@ -23,6 +24,7 @@ function ProjDetails({ project }) {
     logoAstro,
     logoTs,
     logoSass,
+    logoCloud,
     enlarge,
   };
 
