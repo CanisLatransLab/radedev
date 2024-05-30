@@ -14,7 +14,7 @@ import Loader from './Loader';
 
 function Home() {
   const [isMobile, setIsMobile] = useState(null);
-  const isMobileQuery = useMediaQuery('(max-width: 640px)');
+  const isMobileQuery = useMediaQuery('(max-width: 900px)');
 
   useEffect(() => {
     setIsMobile(isMobileQuery);
