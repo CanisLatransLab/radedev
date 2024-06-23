@@ -111,21 +111,20 @@ export default function Portfolio() {
           <p
             className='max-md:mx-auto max-md:max-w-[35rem]  mt-8 max-w-[95rem] text-2xl font-thin md:text-[2.5rem] md:leading-[3.5rem] mobile:mx-auto mobile:w-[30rem] mobile:text-center'
             id='nav-about'>
-            From the lens to lines of code, Radek&apos;s journey is a testament to passion and
-            adaptability. Initially self-taught, he discovered a deep love for programming that
-            evolved from a hobby into a full-blown profession. With a rich 15-year background in
-            professional photography, videography, and animation, his transition into the tech realm
-            was both bold and seamless. Today, after four impactful years as a front-end developer
-            with significant back-end expertise, he&apos;s venturing into the world of mobile
-            development. Drawing from his years behind the camera, Radek possesses an acute design
-            sensibility, paying attention to UI designs and animations to elevate user experience.{' '}
+            Self-taught web and mobile developer with a keen eye for design and a deep understanding
+            of animations and UI micro animations. I like to think deeply about the user interface –
+            how it looks, feels, and behaves. Over the years, I have had the privilege of working
+            with notable brands like Monster Energy and prominent ecommerce shops such as Nisbets,
+            ranked among the top 50 best ecommerce shops in the UK. Continuously expanding my
+            knowledge and skill set, I strive to deliver visually appealing and highly functional
+            digital experiences.
           </p>
 
-          <p className='max-md:mx-auto max-md:max-w-[35rem]  mt-8 max-w-[95rem] text-2xl font-thin md:text-[2.5rem] md:leading-[3.5rem] mobile:mx-auto mobile:w-[30rem] mobile:text-center'>
+          {/* <p className='max-md:mx-auto max-md:max-w-[35rem]  mt-8 max-w-[95rem] text-2xl font-thin md:text-[2.5rem] md:leading-[3.5rem] mobile:mx-auto mobile:w-[30rem] mobile:text-center'>
             While he primarily specialises in React, he remains ever-curious, always exploring new
             technologies. Over the years, he&apos;s had the privilege of working with clients like
             Monster Energy, Red Bull, Adidas, Nestle, and more.
-          </p>
+          </p> */}
         </motion.div>
       </div>
     </section>
